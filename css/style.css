@@ -196,11 +196,11 @@ h1:before {
   font-size:25px;
   font-family: "IconicStroke";
 }
-.iconic.link:before { content: '/'; }
+/**.iconic.link:before { content: '/'; }
 .iconic.quote-alt:before { content: "'"; }
 .iconic.comment:before { content: "q"; }
 .iconic.user:before { content: "u"; }
-.iconic.mail-alt:before { content: "M"; }
+.iconic.mail-alt:before { content: "M"; }*/
 
 input:required, textarea:required {
   -moz-box-shadow:none; 
@@ -326,9 +326,9 @@ p{
 }
 .tema {
   
-  width: 60%;
+  width: 70;
   height: auto;
-  margin-left: 25%;
+  margin-left: 15%;
 
 }
 a.bot9{
@@ -425,4 +425,28 @@ a.bot9:active::before {
         -o-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
         box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 }
+.question {
+  width: 80%;
+  height: auto;
+  border: 2px solid black;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.picture {
+  border: 1px solid black;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+.vopros {
+  border: 1px solid black;
+  background-color: white;
+  width: 50%;
+  
+  margin-left: 25%;
+}
+.otv {
+  margin-left: 30%;
+  margin-bottom: 10%;
+}
+
 
