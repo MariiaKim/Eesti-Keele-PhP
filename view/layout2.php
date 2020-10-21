@@ -7,20 +7,21 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
     </head>
-  <body>  
+  <body>
+      <p class="vih"><img src="image/7.png"></p>
 <div class="zagl">
     <h2>Mängi ja õpi</h2>
     </div>
     <section>
          <div class="divBox">
-             <ul class="submenu">
+             
                  <?php
                      if(isset($content)){
                          echo $content;
                      }
                      else {echo '<h1>Content is gone!</h1>';}
              ?>
-                 </ul>
+
          </div>
     </section>
         
