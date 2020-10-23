@@ -5,20 +5,18 @@ $path = explode ('/', $host)[$num];
 if ($path == '' OR $path == 'index' OR $path == 'index.php'){
     $response = Controller::StartSite();
 }
-elseif ($path == 'category'){//оставим для type ???????????
+// Все категории упражнений
+elseif ($path == 'category'){
      $response = Controller::AllCategory();
 }
 
-// Новый код для теста новой ветки в Гите
-elseif ($path == 'category2'){
-     $response = Controller::AllCategory();
+// Одно упражнение
+elseif ($path == 'category' and isset($_GET['id'])) {
+     $response = Controller::ExerciseByCatID($_GET['id']);
 }
 
 
-// Виталик - Еще один Новый код для теста новой ветки в Гите
-elseif ($path == 'category2'){
-     $response = Controller::AllCategory();
-}
+
 
 
 
