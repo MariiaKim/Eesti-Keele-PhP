@@ -13,6 +13,10 @@ elseif ($path == 'category'){//оставим для type ???????????
 elseif ($path == 'category2'){
      $response = Controller::AllCategory();
 }
+//  мария Новый код для теста новой ветки в Гите
+elseif ($path == 'category2'){
+     $response = Controller::AllCategory();
+}
 
 
 
