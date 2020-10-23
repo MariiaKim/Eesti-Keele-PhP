@@ -6,53 +6,36 @@
         <link href="./css/login.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="panel panel-default">
-                        <div class="panel-heading"><h3>Registration form</h3></div>
-                        <div class="panel-body">
-                            <form class="form-horizontal" role="form" method="POST" action="registerAnswer">
-                                <div class="form-group">
-                                    <label for="name" class="col-md-4 control-label">Name</label>
-                                    <div class="col-md-6">
-                                        <input id="name" type="text" class="form-control" name="name" value="" required autofocus>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="col-md-4 control-label">E-mail address</label>
-                                    <div class="col-md-6">
-                                        <input id="email" type="email" class="form-control" name="email" value="" required>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="col-md-4 control-label">Password</label>
-                                    <div class="col-md-6">
-                                        <input id="password" type="password" class="form-control" name="password" required>
-                                    </div>
-                                    
-                                </div>
-                                <div class="form-group">
-                                    <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
-                                    <div class="col-md-6">
-                          <input id="password-confirm" type="password" class="form-control" name="confirm" required>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-6 col-md-offset-4">
-                                        <button type="submit" class="btn btn-primary" name="save">Register</button>
-                                    </div>
-                                </div>
-                                <p style="padding-top: 10px;"><a href="./">Web site</a></p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-    </body>
+   <a href="./"><img class="vih" src="image/7.png"></a>
+  <form class='login-form' style="width: 50%;height: auto;">
+    <div class="flex-row logo">
+        <h1 class="zaglo">registreerimine</h1>
+  </div>
+  <div class="card">
+  
+ 
+    
+  </article>
+</div>
+
+  <div class="flex-row">
+    <input id="username" class='lf--input' placeholder='usernimi' type='text'>
+  </div>
+  <div class="flex-row">
+    <input id="email" class='lf--input' placeholder='email' type='text'>
+  </div>
+  <div class="flex-row">
+    <input id="password" class='lf--input' placeholder='parool' type='password'>
+  </div>
+  <div class="flex-row">
+    <input id="password" class='lf--input' placeholder='Kinnita salasõna' type='password'>
+  </div>
+  <input class='lf--submit' type='submit' value='sissepääs'>
+  <a class='lf--forgot' href='#'>Ei saa sisse? Sisse Log</a>
+</form>
+  
+  
+</body>
 </html>
 
 

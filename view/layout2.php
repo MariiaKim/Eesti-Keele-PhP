@@ -8,7 +8,7 @@
         
     </head>
   <body>
-      <p class="vih"><img src="image/7.png"></p>
+      <p class="vih"><a href="./"><img src="image/7.png"></a></p>
 <div class="zagl">
     <h2>Mängi ja õpi</h2>
     </div>

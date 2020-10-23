@@ -16,6 +16,8 @@ elseif ($path == 'registerAnswer'){
     // register user
     $response = Controller::registerUser();
 }
+
+
 else {
      $response = Controller::error404();
 }
