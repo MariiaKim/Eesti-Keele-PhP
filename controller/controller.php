@@ -20,5 +20,9 @@ class Controller {
       
         include_once 'view/info.php';//вывод info
       }
-   
+        public static function AbiUser() {
+      
+        include_once 'view/abi.php';//вывод info
+      }
+
 }
