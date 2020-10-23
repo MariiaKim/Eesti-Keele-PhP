@@ -16,5 +16,9 @@ class Controller {
         $result = Register::registerUser();
         include_once ('view/answerRegister.php');
     }
+      public static function InfoPage() {
+      
+        include_once 'view/info.php';//вывод info
+      }
    
 }
