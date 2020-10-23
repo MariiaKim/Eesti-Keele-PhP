@@ -15,9 +15,7 @@ elseif ($path == 'category2'){
 }
 
 
-// Виталик - Еще один Новый код для теста новой ветки в Гите
-elseif ($path == 'category2'){
-     $response = Controller::AllCategory();
+
 }
 
 
