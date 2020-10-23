@@ -14,6 +14,14 @@ elseif ($path == 'category2'){
      $response = Controller::AllCategory();
 }
 
+
+// Виталик - Еще один Новый код для теста новой ветки в Гите
+elseif ($path == 'category2'){
+     $response = Controller::AllCategory();
+}
+
+
+
 elseif ($path == 'registerForm'){
     // registration form
     $response = Controller::registerForm();
