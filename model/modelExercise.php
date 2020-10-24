@@ -16,15 +16,16 @@ class Exercise {
         return $arrCount;
     }
     
-    // Выборка одного упражнения определенной категории=$id
+    // Выборка одного вопроса определенной категории=$id
     public static function getOneExerciseByCategoryID($id) {
-        $query = "SELECT count(id) as 'count' FROM questions WHERE id_type_exercise=".(string)$id;
-        $db = new database();
-        $arrCount = $db->getAll($query);
-        $exerciseNumber = mt_rand(0, $arrCount);
-        $query = "SELECT * FROM questions WHERE id=".(string)$exerciseNumber;
-        $arr = $db->getAll($query);
-        return $arr;
+        $arr = Exercise::getExercisesByCategoryID($id);
+        //$query = "SELECT count(id) as 'count' FROM questions WHERE id_type_exercise=".(string)$id;
+        //$arrCount = $db->getAll($query);
+        //$question = $arr[$questionNumber];
+        // Считаем кличество вопросов заданной категории, чтобы сгенерировать случайный номер из диапазона "1 - кол-во вопросов".
+        $questionsCount = count($arr);
+        $questionNumber = mt_rand(1, $questionsCount); // Выбираем случайный вопрос
+        return $arr[$questionNumber];
     }
     
 }

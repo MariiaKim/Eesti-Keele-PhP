@@ -7,16 +7,13 @@ if ($path == '' OR $path == 'index' OR $path == 'index.php'){
 }
 // Все категории упражнений
 elseif ($path == 'category'){
-     $response = Controller::AllCategory();
+    $response = Controller::AllCategory();
 }
 
 // Одно упражнение
-elseif ($path == 'category' and isset($_GET['id'])) {
-     $response = Controller::ExerciseByCatID($_GET['id']);
+elseif ($path == 'exercisetype' and isset($_GET['id'])) {
+    $response = Controller::ExerciseByCatID($_GET['id']);
 }
-
-
-
 
 
 

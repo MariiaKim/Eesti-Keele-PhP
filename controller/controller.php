@@ -7,14 +7,12 @@ class Controller {
         $arr = Category::getAllCategory();
         include_once 'view/allCategories.php';//вывод всех type_exercise
     }
+    // Получение категории, вопроса и ответов для выбранного $id категории
     public static function ExerciseByCatID($id) {
-        $oneCat = Category::getOneCategory($id);
-        $arr = Exercise::getOneExerciseByCategoryID($id);
-        
-
-        
-        include_once 'view/catexercise.php';
-        
+        $oneCat = Category::getOneCategory($id); // категория
+        $arr = Exercise::getOneExerciseByCategoryID($id); // один вопрос
+        $answers = Answer::getAnswers($arr); // набор ответов
+        include_once 'view/exercise.php';
     }
     
     

@@ -11,7 +11,7 @@ class Category {
         return $arr;
     }
     
-    // Выборка одного упражнения
+    // Выборка одной категории
     public static function getOneCategory($id) {
         $query = "SELECT * FROM type_exercise WHERE id=".(string)$id;
         $db = new database();
