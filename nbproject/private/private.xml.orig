@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+<<<<<<< HEAD
+            <file>file:/C:/xampp/htdocs/JKTVR19/Eesti-Keele-PhP/route/routing.php</file>
+=======
+            <file>file:/C:/xampp/htdocs/Eesti-Keele-PhP/model/modelExercise.php</file>
+            <file>file:/C:/xampp/htdocs/Eesti-Keele-PhP/model/modelCategory.php</file>
+            <file>file:/C:/xampp/htdocs/Eesti-Keele-PhP/view/allCategories.php</file>
+            <file>file:/C:/xampp/htdocs/Eesti-Keele-PhP/route/routing.php</file>
+            <file>file:/C:/xampp/htdocs/Eesti-Keele-PhP/view/catexercise.php</file>
+            <file>file:/C:/xampp/htdocs/Eesti-Keele-PhP/controller/controller.php</file>
+>>>>>>> vitalik
+        </group>
+    </open-files>
+</project-private>
