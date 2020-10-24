@@ -5,12 +5,20 @@ $path = explode ('/', $host)[$num];
 if ($path == '' OR $path == 'index' OR $path == 'index.php'){
     $response = Controller::StartSite();
 }
-elseif ($path == 'category'){//оставим для type ???????????
-     $response = Controller::AllCategory();
+// Все категории упражнений
+elseif ($path == 'category'){
+    $response = Controller::AllCategory();
 }
+
+// Одно упражнение
+elseif ($path == 'exercisetype' and isset($_GET['id'])) {
+    $response = Controller::ExerciseByCatID($_GET['id']);
+}
+
 elseif ($path == 'abi'){
      $response = Controller::AbiUser();
-}
+     }
+     
 
 elseif ($path == 'registerForm'){
     // registration form
@@ -20,8 +28,6 @@ elseif ($path == 'registerAnswer'){
     // register user
     $response = Controller::registerUser();
 }
-
-
 else {
      $response = Controller::error404();
 }
