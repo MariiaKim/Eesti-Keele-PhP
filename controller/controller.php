@@ -8,7 +8,11 @@ class Controller {
         include_once 'view/allCategories.php';//вывод всех type_exercise
     }
     public static function ExerciseByCatID($id) {
-        $arr = News::getExerciseByCategoryID($id);
+        $oneCat = Category::getOneCategory($id);
+        $arr = Exercise::getOneExerciseByCategoryID($id);
+        
+
+        
         include_once 'view/catexercise.php';
         
     }
