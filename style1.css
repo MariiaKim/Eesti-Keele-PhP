@@ -4,15 +4,13 @@ body {
 
   height: auto;
 }
-.zagli {
+.zagl {
   font-family: segoe script;
-  font-size: 2em;
+  font-size: 4em;
   text-align: center;
   color: red;
   transform: rotate(30);
-  margin-top: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 10%;
   
 
 }
@@ -26,7 +24,7 @@ h2{
   margin-left: 5%;
 
 }
-p{
+p.into {
    font-family: segoe script;
   font-size: 1.5em;
   text-align: left;
@@ -38,7 +36,7 @@ p{
 	
 }
 .info {
-    width: 60%;
+  width: 60%;
   border: 5px solid red;
   margin-left: 45%;
   margin-right: 45%;
@@ -64,12 +62,20 @@ body.abi {
 	background-size: cover;
     padding-top:100px;
 }
-p{
+p.love{
   color:rgba(255,255,255,.5);
   width:100%;
   margin: 100px auto;
   font-weight:300;
-  text-align:center;   
+  text-align:center;
+  font-family: segoe script;
+  font-size: 1.5em;
+  text-align: left;
+  color: #0000FF;
+  transform: rotate(30);
+  margin-top: 10%;
+  margin-left: 20%;
+     
 }
 
 a{
@@ -232,3 +238,4 @@ input:focus, textarea:focus {
     box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
     outline: none;
 }
+

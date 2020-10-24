@@ -8,9 +8,9 @@
         
     </head>
   <body>
-      <p class="vih"><a href="./"><img src="image/7.png"></a></p>
+      <p class="vih"><a href="./" class="menu__link menu__link"><img src="image/7.png"></a></p>
 <div class="zagl">
-    <h2>Mängi ja õpi</h2>
+    Mängi ja õpi
     </div>
     <section>
          <div class="divBox">

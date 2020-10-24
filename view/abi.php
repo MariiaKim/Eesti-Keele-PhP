@@ -16,7 +16,7 @@
             <textarea rows="4" cols="50" name="subject" placeholder="Введите ваше сообщение:" class="message" required></textarea>
             <input name="submit" class="btn" type="submit" value="Отправить" />
         </form>
-        <p>с любовью Mängi ja õpi</p>
+        <p class="love">с любовью Mängi ja õpi</p>
      </div>
 </body>
 </html>

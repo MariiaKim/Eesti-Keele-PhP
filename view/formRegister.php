@@ -5,40 +5,49 @@
         <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="./css/login.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
+    <body class="register">
    <a href="./"><img class="vih" src="image/7.png"></a>
-  <form class='login-form' style="width: 50%;height: auto;">
-    <div class="flex-row logo">
-        <h1 class="zaglo">registreerimine</h1>
-  </div>
-  <div class="card">
   
- 
-    
-  </article>
-</div>
+  <meta charset="UTF-8">
+  <title>Fancy Forms</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style1.css">
 
-  <div class="flex-row">
-    <input id="username" class='lf--input' placeholder='usernimi' type='text'>
-  </div>
-  <div class="flex-row">
-    <input id="email" class='lf--input' placeholder='email' type='text'>
-  </div>
-  <div class="flex-row">
-    <input id="password" class='lf--input' placeholder='parool' type='password'>
-  </div>
-  <div class="flex-row">
-    <input id="password" class='lf--input' placeholder='Kinnita salasõna' type='password'>
-  </div>
-  <input class='lf--submit' type='submit' value='sissepääs'>
-  <a class='lf--forgot' href='#'>Ei saa sisse? Sisse Log</a>
-</form>
   
+</head>
+
+<body>
+  <div class="middle">
+  <div class="regis">Fancy Forms</div>
   
+  <!--  Fancy inputs  -->
+  <div id="fancy-inputs">
+    <label class="input">
+      <input type="text">
+      <span><span>Username</span></span>
+    </label>
+
+    <label class="input">
+      <input type="text">
+      <span><span>Password</span></span>
+    </label>
+  </div>
+  
+  <div id="fancy-radio">
+    <input type="radio" name="group" id="questions" class="pull-left" style="display: none;">
+    <label class="radio questions" for="questions">Male</label>
+
+    <input type="radio" name="group" id="photo" class="pull-left" style="display: none;">
+    <label class="radio photo" for="photo">Female</label>
+  </div>
+  
+  <a href="" class="btn">Sign Up</a>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
 </body>
 </html>
-
-
-
-
-
