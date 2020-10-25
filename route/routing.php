@@ -15,6 +15,9 @@ elseif ($path == 'exercisetype' and isset($_GET['id'])) {
     $response = Controller::ExerciseByCatID($_GET['id']);
 }
 
+elseif ($path == 'abi'){
+     $response = Controller::AbiUser();
+     }
 
 
 elseif ($path == 'registerForm'){
@@ -25,8 +28,6 @@ elseif ($path == 'registerAnswer'){
     // register user
     $response = Controller::registerUser();
 }
-
-
 else {
      $response = Controller::error404();
 }
