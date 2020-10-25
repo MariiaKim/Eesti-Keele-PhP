@@ -14,8 +14,12 @@ class Answer {
         // Выборка 5 случайных вопросов
         $query = "SELECT * FROM `answer` WHERE NOT id_questions=".(string)$question['id']." ORDER BY rand() LIMIT 5";
         $arrRandom = $db->getAll($query);
-        $arr[5] = $arrRandom;
-        
+        $i=1;
+        foreach ($arrRandom as $value) {
+            $arr[$i] = $value;
+            $i++;
+        }
+//        $arr[5] = $arrRandom;
         return $arr;
     }
 }
