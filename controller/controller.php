@@ -16,13 +16,15 @@ class Controller {
         $result = Register::registerUser();
         include_once ('view/answerRegister.php');
     }
+    //page info
       public static function InfoPage() {
       
-        include_once 'view/info.php';//вывод info
+        include_once 'view/info.php';
       }
+      //page abi
         public static function AbiUser() {
       
-        include_once 'view/abi.php';//вывод info
+        include_once 'view/abi.php';
       }
 
 }

@@ -6,7 +6,7 @@ include_once 'inc/database.php';
 require 'model/modelCategory.php';
 //require 'model/news.php';
 
-//require 'model/register.php';
+require 'model/register.php';
 
 //include_once 'view/news.php';
 include_once 'view/category.php';
