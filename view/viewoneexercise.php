@@ -6,7 +6,6 @@ class ViewExercise {
         echo 'Question title: '.$arr['title'].'</br></br>';   
         
         foreach ($answers as $value) {
-            //echo '<p>Variant: '.$i.'. '.$value['answer'].'</p>';
             echo '<input type="radio" id="answ1" name="answer" value="'.$value['answer'].'">';
             echo '<label for="answ1">'.$value['answer'].'</label><br>';
         }
