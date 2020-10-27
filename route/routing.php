@@ -19,7 +19,11 @@ elseif ($path == 'abi'){
      $response = Controller::AbiUser();
      }
 
+elseif ($path == 'info'){
+     $response = Controller::InfoPage();
+}
 
+     
 elseif ($path == 'registerForm'){
     // registration form
     $response = Controller::registerForm();
