@@ -16,7 +16,7 @@ if(isset($result)){
     else if($result[0] == false){
         ?>
         <div class="container">
-            <div class="alert alert-info">
+             <div class="middle">
                 <strong>Error! </strong><br>
                 <?php echo $result[1];?><br>
                 <a href="registerForm">Registration From</a>
