@@ -18,6 +18,9 @@ elseif ($path == 'exercisetype' and isset($_GET['id'])) {
 elseif ($path == 'abi'){
      $response = Controller::AbiUser();
      }
+elseif ($path == 'info'){
+     $response = Controller::InfoPage();
+     }
      
 
 elseif ($path == 'registerForm'){

@@ -64,7 +64,7 @@ a {
   -webkit-transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.zagl {
+div.zagl {
   font-family: segoe script;
   font-size: 4em;
   text-align: center;
@@ -120,11 +120,6 @@ h1{
 
 }
 
- {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 
 
@@ -334,15 +329,7 @@ h1{
     border-radius: 5px; /* 5px rounded corners */
     width: 100%;
 }
-h1.zagl {
-  font-family: segoe script;
-  font-size: 2em;
-  text-align: center;
-  color: #B0E0E6;
-  transform: rotate(30);
-  margin-top: 10%;
-    
-}
+
 body.info {
   background:#B0E0E6;
   background-size: cover;

@@ -9,7 +9,7 @@ body {
   font-size: 4em;
   text-align: center;
   color: red;
-  transform: rotate(30);
+
   margin-top: 10%;
   
 
@@ -37,9 +37,10 @@ p.into {
 }
 .info {
   width: 60%;
+  height: auto;
   border: 5px solid red;
-  margin-left: 45%;
-  margin-right: 45%;
+  margin-top: 5%;
+  
 
   margin-bottom: 4%;
   border-radius: 25px;
@@ -48,7 +49,7 @@ p.into {
     width: 3%;
     height: auto;
     margin-left: 2%;
-
+    
 }
 
     
@@ -184,7 +185,7 @@ input:focus, textarea:focus {
 	overflow: hidden; 
 }
 /* Стили для кнопки отправить */
-.btn {
+.btn_1 {
 	width: 138px;
 	height: 44px;
     -moz-border-radius: 4px;
@@ -209,7 +210,7 @@ input:focus, textarea:focus {
     text-shadow: #333333 0 1px 0;
     color: #e1e1e1;
 }
-.btn:hover {
+.btn_1:hover {
     border: 1px solid #253737;
     text-shadow: #333333 0 1px 0;
     background: #416b68;
@@ -221,7 +222,7 @@ input:focus, textarea:focus {
     background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
     color: #fff;
  }
-.btn:active {
+.btn_1:active {
     margin-top:1px;
     text-shadow: #333333 0 -1px 0;
     border: 1px solid #333333;

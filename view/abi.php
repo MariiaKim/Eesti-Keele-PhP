@@ -14,7 +14,7 @@
 	        <input name="name" placeholder="Укажите ваше имя!" class="name" required />
 	        <input name="emailaddress" placeholder="Укажите ваш Email!" class="email" type="email" required />
             <textarea rows="4" cols="50" name="subject" placeholder="Введите ваше сообщение:" class="message" required></textarea>
-            <input name="submit" class="btn" type="submit" value="Отправить" />
+            <input name="submit" class="btn_1" type="submit" value="Отправить" />
         </form>
         <p class="love">с любовью Mängi ja õpi</p>
      </div>
