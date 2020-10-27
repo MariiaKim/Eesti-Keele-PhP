@@ -8,6 +8,14 @@ class Controller {
         include_once 'view/allCategories.php';//вывод всех type
     }
     
+    // Получение категории, вопроса и ответов для выбранного $id категории
+    public static function ExerciseByCatID($id) {
+        $oneCat = Category::getOneCategory($id); // категория
+        $arr = Exercise::getOneExerciseByCategoryID($id); // один вопрос
+        $answers = Answer::getAnswers($arr); // набор ответов
+        include_once 'view/exercise.php';
+    }
+    
         // ------------- Registration ---------------
     public function registerForm() {
         include_once ('view/formRegister.php');
