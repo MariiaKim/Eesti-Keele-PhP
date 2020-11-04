@@ -8,7 +8,7 @@ if(isset($result)){
         ?>
         <div class="container">
             <div class="alert alert-info">
-                <strong>User added.</strong><a href="admin/"> Dashboard</a>
+                <strong>Регитсрация прошла успешно</strong><a href="admin/"> Dashboard</a>
             </div>
         </div>
         <?php
@@ -26,8 +26,9 @@ if(isset($result)){
             
     }
 }
-?>
-<?php $content = ob_get_clean(); ?>
-<?php include 'view/layout2.php';?>
-<?php include 'view/layout.php';?>
+
+//$content = ob_get_clean();
+include 'view/formRegister.php';
+//include 'view/layout2.php';
+//include 'view/layout.php';?>
 

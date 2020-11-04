@@ -16,6 +16,11 @@ class Controller {
         include_once 'view/exercise.php';
     }
     
+    // Запись ответа на упражнение
+    public function exerciseAnswer() {
+        $result = ExerciseAnswer::saveAnswer();
+    }
+    
         // ------------- Registration ---------------
     public function registerForm() {
         include_once ('view/formRegister.php');

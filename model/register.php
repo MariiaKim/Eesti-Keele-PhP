@@ -7,21 +7,21 @@ class Register {
             $name = $_POST['name'];
             $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
             if (!$email){
-                $errorString.= "Wrong Email<br />";
+                $errorString.= "Некорректный e-mail<br />";
             }
             $password = $_POST['password'];
             $confirm = $_POST['confirm'];
             if (!$password || !$confirm || mb_strlen($password) < 6){
-                $errorString.= "Password must be at least 6 letters or more";
+                $errorString.= "Длина пароля должна быть не менее 6 символов";
             }
             if ($password!=$confirm){
-                $errorString.= "Passwords don't match<br/>";
+                $errorString.= "Введенные пароли не совпадают<br/>";
             }
             if (mb_strlen($errorString) == 0){
                 $passwordHash = password_hash($_POST['password'], PASSWORD_DEFAULT);
                 $date = Date("Y-m-d");
-         $sql = "INSERT INTO `users` (`id`, `login`, `email`, `parol`, `password`,`status`, `registration_date`)"
-                           . "VALUES (NULL, '$name', '$email', '$passwordHash', '$password', 'user', '$date')";
+         $sql = "INSERT INTO `user` (`name`, `email`, `login`, `password`, `status`)"
+                           . "VALUES ('$name', '$email', '$email', '$passwordHash', 'user')";
                 echo $sql;
                 $db = new database();
                 $item = $db->executeRun($sql);

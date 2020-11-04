@@ -14,6 +14,10 @@ elseif ($path == 'category'){
 elseif ($path == 'exercisetype' and isset($_GET['id'])) {
     $response = Controller::ExerciseByCatID($_GET['id']);
 }
+// Ответ на упражнение
+elseif ($path == 'exerciseAnswer'){
+    $response = Controller::exerciseAnswer();
+}
 
 elseif ($path == 'abi'){
      $response = Controller::AbiUser();

@@ -6,6 +6,7 @@ include_once 'inc/database.php';
 require 'model/modelAnswer.php';
 require 'model/modelCategory.php';
 require 'model/modelExercise.php';
+require 'model/register.php';
 
 //require 'model/register.php';
 
