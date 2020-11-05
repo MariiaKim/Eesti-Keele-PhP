@@ -22,17 +22,14 @@
 <body>
      <div class="container">
   <div class="middle">
-  <div class="regis">Fancy Forms</div>
-  <form class="form-horizontal" role="form" method="POST" action="registerAnswer">
+  <div class="regis">Login Forms</div>
+ 
  
   <div id="fancy-inputs">
-    <label class="input" for="name">
-      <input type="text" id="name" name="name" value="" required autofocus>
-      <span><span>Username</span></span>
-    </label>
+    
       <label class="input"  for="email" >
-      <input type="email" id="email" name="email" value="" required>
-      <span><span>email</span></span>
+      <input type="text"  name="username" placeholder="username" autofocus>
+      <span><span>username</span></span>
     </label>
 
       <label class="input" for="password">
@@ -48,7 +45,27 @@
      </div>
 </body>
 
- 
+ <!--
+ <body>
+        <div class="container">
+            <form class="form-signin" action="login" method="POST">
+                <h3 class="form-signin-heading">Input your data</h3>
+                <input type="text" name="email" class="form-control" placeholder="Email" autofocus>
+                <input type="password" name="password" class="form-control" placeholder="Password">
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="btnLogin">Login</button>
+                <p style="padding-top: 10px;">
+                    //<?php
+                   //if (isset($_SESSION['errorString'])){
+                      //  echo $_SESSION['errorString'];
+                       // unset($_SESSION['errorString']);
+                   // }
+                    //?>
+                </p>
+                <p style="padding-top: 10px;"><a href="../">Web site</a></p>
+            </form>
+        </div>
+    </body>
+ -->
 </html>
 
 
