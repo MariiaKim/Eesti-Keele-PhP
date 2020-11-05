@@ -18,7 +18,8 @@ class Controller {
     
     // Запись ответа на упражнение
     public function exerciseAnswer() {
-        $result = ExerciseAnswer::saveAnswer();
+        $result = Exercise::saveExerciseAnswer();
+        
     }
     
         // ------------- Registration ---------------
