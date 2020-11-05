@@ -28,4 +28,21 @@ class Exercise {
         return $arr[$questionNumber];
     }
     
+    // Обработка ответа упражнения
+    public static function savetExerciseAnswer(){
+        
+        if (isset($_SESSION['sessionId'])){     // Сохранение если выполнен логин
+
+            } else {                            // Сохранение для гостя
+                $userAnswer = $_POST['answer'];
+                if ($userAnswer == $answers['']) {
+                    
+                }
+                $points = 
+
+            }    
+    }
+    
+    
+    
 }
