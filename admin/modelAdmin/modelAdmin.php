@@ -16,15 +16,10 @@ class modelAdmin {
                     $db = new database();
                     $item = $db->getOne($sql);
                     
-                    echo "username = ".'</br>';
-                    print_r($username);
-                    echo '</br>';
-                    print_r($item);
-                    
                     if ($item!=null){
                         //$loginEmail = strtolower($_POST['email']);
                         $password = $_POST['password'];
-                        if ($username == $item['username'] && password_verify($password, $item['password'])){
+                        if ($username == $item['login'] && password_verify($password, $item['password'])){
                             echo 'Login success!!!';
                             $_SESSION['sessionId'] = session_id();
                             $_SESSION['userId'] = $item['id'];

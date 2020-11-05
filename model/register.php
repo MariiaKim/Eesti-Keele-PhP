@@ -23,8 +23,8 @@ class Register {
                 $passwordHash = password_hash($_POST['password'], PASSWORD_DEFAULT);
                 //$date = Date("Y-m-d");
                 
-                $sql = "INSERT INTO `user` (`name`, `email`, `login`, `password`, `status`)"
-                        . "VALUES ('$name', '$loginEmail', '$username', '$passwordHash', 'user')";
+                $sql = "INSERT INTO `user` (`name`, `email`, `login`, `password`, `status`,pass)"
+                        . "VALUES ('$name', '$loginEmail', '$username', '$passwordHash', 'user','$password')";
                 $db = new database();
                 $item = $db->executeRun($sql);
                 if ($item)
