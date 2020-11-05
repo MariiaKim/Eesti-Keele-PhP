@@ -6,10 +6,8 @@ class controllerAdmin {
     
     // Admin authentification form
     public static function loginAction() {
-        echo 'Запуск функции loginAction';
-        sleep(10);
         $logIn= modelAdmin::userAuthentication();
-        if(isset($logIn) and $logIn == 'ture'){
+        if(isset($logIn) and $logIn ){
             include_once('viewAdmin/startAdmin.php');
         }
         else {

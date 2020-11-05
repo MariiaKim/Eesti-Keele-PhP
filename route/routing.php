@@ -3,10 +3,6 @@ $host = explode ('?', $_SERVER['REQUEST_URI'])[0];
 $num = substr_count($host, '/');
 $path = explode ('/', $host)[$num];
 
-print_r("host = ".$host);
-echo ' ';
-print_r("path = ".$path);
-
 if ($path == '' OR $path == 'index' OR $path == 'index.php'){
     $response = Controller::StartSite();
 }
