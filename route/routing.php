@@ -2,6 +2,11 @@
 $host = explode ('?', $_SERVER['REQUEST_URI'])[0];
 $num = substr_count($host, '/');
 $path = explode ('/', $host)[$num];
+
+print_r("host = ".$host);
+echo ' ';
+print_r("path = ".$path);
+
 if ($path == '' OR $path == 'index' OR $path == 'index.php'){
     $response = Controller::StartSite();
 }
@@ -19,20 +24,22 @@ elseif ($path == 'exerciseAnswer'){
     $response = Controller::exerciseAnswer();
 }
 
+// обратная связь
 elseif ($path == 'abi'){
      $response = Controller::AbiUser();
      }
+// Правила игры     
 elseif ($path == 'info'){
      $response = Controller::InfoPage();
      }
-     
 
+// Регистрация нового пользователя registration form
 elseif ($path == 'registerForm'){
-    // registration form
     $response = Controller::registerForm();
 }
+
+// register user
 elseif ($path == 'registerAnswer'){
-    // register user
     $response = Controller::registerUser();
 }
 else {

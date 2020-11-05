@@ -39,5 +39,9 @@ class Controller {
       
         include_once 'view/abi.php';
       }
+      
+      public static function error404() {
+        include_once 'view/error404.php';
+    }
 
 }

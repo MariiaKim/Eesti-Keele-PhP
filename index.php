@@ -1,6 +1,4 @@
 <?php
-
-
 session_start();
 include_once 'inc/database.php';
 require 'model/modelAnswer.php';

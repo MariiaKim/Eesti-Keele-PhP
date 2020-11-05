@@ -2,6 +2,7 @@
 class modelAdmin {
     // admin authentification
     public static function userAuthentication() {
+        echo 'ModelAdmin -> Проверка логина';
         if(isset($_SESSION['sessionId'])){
             $logIn=true;
         }
