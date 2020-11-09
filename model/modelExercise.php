@@ -38,9 +38,10 @@ class Exercise {
                 if ($userAnswer == $answers['']) {
                     
                 }
-                $points = 
+                //$points = 
 
-            }    
+            }
+            
     }
     
     
