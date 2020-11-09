@@ -11,7 +11,7 @@ elseif ($path == 'category'){
     $response = Controller::AllCategory();
 }
 
-// Одно упражнение
+// Выбор одного упражнения (типа упражнения)
 elseif ($path == 'exercisetype' and isset($_GET['id'])) {
     $response = Controller::ExerciseByCatID($_GET['id']);
 }

@@ -1,6 +1,8 @@
 <?php
 
 class Answer {
+    
+    // Выборка 6 ответов, подходящих для данного вопроса.
     public static function getAnswers($question) {
         
         // Топ-N случайных записей

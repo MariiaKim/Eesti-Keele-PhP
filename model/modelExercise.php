@@ -29,16 +29,31 @@ class Exercise {
     }
     
     // Обработка ответа упражнения
-    public static function savetExerciseAnswer(){
-        
+    public static function saveExerciseAnswer(){
+        global $answers;
+        global $arr;
+        echo 'Печать массива $arr';
+        print_r($arr);
+        print_r($answers);
         if (isset($_SESSION['sessionId'])){     // Сохранение если выполнен логин
 
             } else {                            // Сохранение для гостя
                 $userAnswer = $_POST['answer'];
-                if ($userAnswer == $answers['']) {
+                if ($userAnswer == $answers['answer']) {
+                    echo 'Правильный ответ</br>';
+                    echo 'Выбор пользователя: ';
+                    print_r($userAnswer);
+                    echo '</br>Правильный ответ из базы : ';
+                    print_r($answers['answer']);
+                } else {
+                    echo 'Неправильный ответ</br>';
+                    echo 'Выбор пользователя: ';
+                    print_r($userAnswer);
+                    echo '</br>Правильный ответ из базы : ';
+                    print_r($answers['answer']);
                     
                 }
-                $points = 
+                $points = 1;
 
             }    
     }

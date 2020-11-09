@@ -1,7 +1,5 @@
 <?php
 
-
-
 class Category {
     public static function getAllCategory() {
         $query = "SELECT * FROM type_exercise";
