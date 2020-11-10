@@ -3,9 +3,10 @@
 <head>
 	<title>info</title>
 		<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body>
+    <div class="ramka-7">
 	<p class="vih"><a href="./" ><img src="image/7.png"></a></p>
         <section class="info">
 
@@ -16,5 +17,6 @@
 	Не забудь зарегистрироваться, что бы твои результаты сохранились.<br> В свою очередь мы будем придумывать для тебя вопросы по-сложней.<br> Учи эстонский вместе с нами!!!</p>
 
 </section>
+    </div>
 </body>
 </html>

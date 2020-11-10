@@ -1,6 +1,6 @@
-.divBox {
+body{
 
-
+ background:#B0E0E6;
 }
 .vih {
     width: 3%;
@@ -16,7 +16,7 @@
   
   border-radius: 17px;
   text-align: center;
-  
+ 
   font-family: segoe script;
   font-size: 1.5em;
   text-align: left;
@@ -24,7 +24,7 @@
 }
 
 
-.form-horizontal{
+.form-horizontal1{
    margin: 0 auto;
     max-width: 95%;
     padding: 30px 30px 6px 30px;
@@ -101,11 +101,12 @@
   background: linear-gradient(to left, #1366ff, #ff0b6d);
 }
 .gradient-btn {
-  position: absolute;
-
+ margin-left: 53%;
+ margin-right: 50%;
+  margin-top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: 10%;
   height: auto;
   text-align: center;
   line-height: 60px;
@@ -116,7 +117,7 @@
   text-decoration: none;
   letter-spacing: 6px;
   transition: .5s;
-   font-family: segoe script;
+  font-family: segoe script;
   border: 4px solid #fff;
   border-radius: 60px;
   box-shadow: 0 5px 20px rgba(0,0,0, .5);
@@ -131,6 +132,7 @@
   height: 100%;
   background: linear-gradient(to left, #1366ff, #ff0b6d);
   z-index: -1;
+  
   border-radius: 60px;
   transform: scaleX(0);
   transform-origin: right;
