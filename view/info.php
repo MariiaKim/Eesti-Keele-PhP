@@ -7,7 +7,7 @@
 </head>
 <body>
     <p class="vih"><a href="./" ><img src="image/7.png"></a></p>
-    <div class="ramka-7">
+    <div class="ramka-71">
 	
         <section class="info">
 
