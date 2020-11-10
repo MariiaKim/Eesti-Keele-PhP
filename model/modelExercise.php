@@ -54,6 +54,7 @@ class Exercise {
                     
                 }
 
+                //$points =
 
             }
             

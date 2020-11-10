@@ -3,11 +3,12 @@
 <head>
 	<title>info</title>
 		<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
+    <p class="vih"><a href="./" ><img src="image/7.png"></a></p>
     <div class="ramka-7">
-	<p class="vih"><a href="./" ><img src="image/7.png"></a></p>
+	
         <section class="info">
 
        <h2 class="zagl">Mängi ja õpi</h2>

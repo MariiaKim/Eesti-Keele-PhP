@@ -17,10 +17,11 @@ class ViewExercise {
             
         }
         
-        echo '</form>';
+       
         echo '</div>';
         echo '</div>';
     echo '<button class="gradient-btn" type="submit" name="exerciseAnswerButton">Edasi</button>';
+     echo '</form>';
     }
 }
 ?>
