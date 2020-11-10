@@ -12,9 +12,29 @@ class Controller {
     public static function ExerciseByCatID($id) {
         $oneCat = Category::getOneCategory($id); // категория
         $arrQuestions = Exercise::getOneExerciseByCategoryID($id); // выборка одного случайного вопроса выбранной категории
-        print_r($arrQuestions['id']);//номер выбранного вопроса и хорошо бы сохранить!! как вариант $_SESSION[]
-        
         $arrAnswers = Answer::getAnswers($arrQuestions); // набор ответов
+        print_r($arrQuestions['id']);//номер выбранного вопроса и хорошо бы сохранить!! как вариант $_SESSION[]
+        $_SESSION['sessionId'] = session_id();
+        $_SESSION['catId'] = $oneCat['id'];
+        $_SESSION['questionId'] = $arrQuestions['id'];
+        $_SESSION['answerId'] = $arrAnswers[1][id];
+        echo 'oneCat = ';
+        print_r($oneCat);
+        
+        echo 'arrQuestionsId = ';
+        echo '</br>';
+        print_r($arrQuestions['id']);
+        
+        echo '</br>';
+        echo 'arrQuestions = ';
+        print_r($arrQuestions);
+        
+        echo '</br>arrAnswers = ';
+        print_r($arrAnswers[0]);
+        
+        echo '</br>arrAnswersId = ';
+        print_r($arrAnswers[0]['id']);
+        
         include_once 'view/exercise.php';
        // Exercise::saveExerciseAnswer($arrQuestions, $arrAnswers);
     }

@@ -24,5 +24,3 @@ echo '<div class="ramka-7">';
         
 $content = ob_get_clean();
 include_once 'view/layout3.php';
-
-?>
