@@ -11,7 +11,7 @@ class Controller {
     // Получение категории, вопроса и ответов для выбранного $id категории
     public static function ExerciseByCatID($id) {
         $oneCat = Category::getOneCategory($id); // категория
-        $arr = Exercise::getOneExerciseByCategoryID($id); // один вопрос
+        $arr = Exercise::getOneExerciseByCategoryID($id); // выборка одного случайного вопроса выбранной категории
         $answers = Answer::getAnswers($arr); // набор ответов
         include_once 'view/exercise.php';
     }
