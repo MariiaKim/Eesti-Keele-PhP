@@ -16,7 +16,7 @@ body{
   
   border-radius: 17px;
   text-align: center;
-  margin-text
+  
   font-family: segoe script;
   font-size: 1.5em;
   text-align: left;
@@ -26,7 +26,8 @@ body{
 
 .form-horizontal1{
    margin: 0 auto;
-    max-width: 95%;
+   margin-bottom: 8%;
+    max-width: 99%;
     padding: 30px 30px 6px 30px;
     border: 1px solid rgba(0,0,0,.2);
     -moz-border-radius: 5px;
@@ -40,7 +41,7 @@ body{
     -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
     box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
     overflow: hidden; 
-   
+    border-radius: 20px;
   
 }
 .ramka-7{
@@ -103,10 +104,10 @@ body{
 .gradient-btn {
  margin-left: 53%;
  margin-right: 50%;
-  margin-top: 5%;
+  margin-top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 10%;
+  width: 70%;
   height: auto;
   text-align: center;
   line-height: 60px;

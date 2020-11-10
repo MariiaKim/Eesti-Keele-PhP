@@ -6,7 +6,7 @@ body {
 }
 .zagl {
   font-family: segoe script;
-  font-size: 4em;
+  font-size: 2.5em;
   text-align: center;
   color: red;
 
@@ -26,7 +26,7 @@ h2{
 }
 p.into {
    font-family: segoe script;
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: left;
   color: #0000FF;
   transform: rotate(30);
@@ -38,7 +38,7 @@ p.into {
 .info {
   width: 60%;
   height: auto;
-  border: 5px solid red;
+  
   margin-top: 5%;
   
 
@@ -239,18 +239,70 @@ input:focus, textarea:focus {
     box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
     outline: none;
 }
-.ramka-7 {
+.ramka-71 {
   margin-left: 40%;
-  width: 17%;
+  width: 37%;
   margin-right: 32%;
   margin-top:6%;
   
   border-radius: 17px;
   text-align: center;
-  margin-text
+ 
   font-family: segoe script;
   font-size: 1.5em;
   text-align: left;
   color: #0000FF;
 }
+.ramka-71{
+    
+    background-color: #FFF;
+    position: relative;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-size: 24px;
+    font-family: segoe script;
+    box-shadow: inset 6px 6px 8px 0 rgba(0,0,0,0.4);
+    text-align: center;
+}
+.ramka-71:after, 
+.ramka-71:before {
+    mix-blend-mode:multiply;
+    filter:none;
+    z-index: -1;
+    content:'';
+    width: calc(100% + 90px);
+    height: calc(100% + 90px);
+    position: absolute;
+    animation: anim-ramka-7 8s ease-in-out infinite;
+}
+@keyframes anim-ramka-71 {
+    0%, 100% {
+        clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+    }
+    50% {
+        clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+    }
+}
+.ramka-71:after{
+    animation-delay: -5s;
+    background-color: #BFE2FF;
+    clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+}
+.ramka-71:before {
+    background-color: #337AB7;
+    clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+}
+.ramka-71:hover:after{
+    animation-delay: 1s;
+}
+.ramka-71:hover:before, 
+.ramka-71:hover:after {
+    animation-duration: 2s;
+}
+.answ1 {
+    margin-left: 5%;
+}
+
 
