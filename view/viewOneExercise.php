@@ -9,7 +9,7 @@ class ViewExercise {
         echo '<br><img src="data:image/jpeg;base64,'.base64_encode($arr['picture']).'" width=150 /><br>';
         
         echo ''.$arr['title'].'</br></br>';   
-        echo '<form class="form-horizontal1" role="form" method="POST" action="exerciseAnswer">';
+        echo '<form class="form-horizontal1" role="form" method="POST" action="exerciseAnswer"?qid='.$arrQuestions['id'].'>';
         
         foreach ($answers as $value) {
             echo '<input type="radio" id="answ1" name="answer" value="'.$value['answer'].'">';
@@ -18,10 +18,11 @@ class ViewExercise {
         }
         
        
-        echo '</div>';
-        echo '</div>';
+    
     echo '<button class="gradient-btn" type="submit" name="exerciseAnswerButton">Edasi</button>';
      echo '</form>';
+         echo '</div>';
+        echo '</div>';
     }
 }
 ?>

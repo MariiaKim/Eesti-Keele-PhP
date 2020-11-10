@@ -4,7 +4,7 @@ class Answer {
     
     // Выборка 6 ответов, подходящих для данного вопроса.
     public static function getAnswers($question) {
-        
+
         // Топ-N случайных записей
         // SELECT * FROM `answer` WHERE NOT id_questions=2 ORDER BY rand() LIMIT 5
         
@@ -21,7 +21,7 @@ class Answer {
             $arr[$i] = $value;
             $i++;
         }
-//        $arr[5] = $arrRandom;
+        $GLOBALS['answersArr'] = $arr;
         return $arr;
     }
 }

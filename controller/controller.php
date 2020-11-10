@@ -11,14 +11,19 @@ class Controller {
     // Получение категории, вопроса и ответов для выбранного $id категории
     public static function ExerciseByCatID($id) {
         $oneCat = Category::getOneCategory($id); // категория
-        $arr = Exercise::getOneExerciseByCategoryID($id); // выборка одного случайного вопроса выбранной категории
-        $answers = Answer::getAnswers($arr); // набор ответов
+        $arrQuestions = Exercise::getOneExerciseByCategoryID($id); // выборка одного случайного вопроса выбранной категории
+        print_r($arrQuestions['id']);//номер выбранного вопроса и хорошо бы сохранить!! как вариант $_SESSION[]
+        
+        $arrAnswers = Answer::getAnswers($arrQuestions); // набор ответов
         include_once 'view/exercise.php';
+       // Exercise::saveExerciseAnswer($arrQuestions, $arrAnswers);
     }
     
     // Запись ответа на упражнение
     public function exerciseAnswer() {
-        $result = Exercise::saveExerciseAnswer();
+        
+
+        
         
     }
     

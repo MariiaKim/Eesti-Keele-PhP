@@ -16,8 +16,8 @@ elseif ($path == 'exercisetype' and isset($_GET['id'])) {
     $response = Controller::ExerciseByCatID($_GET['id']);
 }
 // Ответ на упражнение
-elseif ($path == 'exerciseAnswer'){
-    $response = Controller::exerciseAnswer();
+elseif ($path == 'exerciseAnswer' and isset($_GET['id']) and isset($_GET['q'])){
+    $response = Controller::exerciseAnswer($_GET['id'],$_GET['q']);
 }
 
 // обратная связь
