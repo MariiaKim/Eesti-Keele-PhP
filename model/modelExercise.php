@@ -53,9 +53,14 @@ class Exercise {
                     print_r($answers['answer']);
                     
                 }
+<<<<<<< HEAD
                 $points = 1;
+=======
+                //$points = 
+>>>>>>> c4b25e47f546743c984f12ed53285f2c4aade464
 
-            }    
+            }
+            
     }
     
     
