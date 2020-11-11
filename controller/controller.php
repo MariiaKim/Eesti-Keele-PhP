@@ -15,43 +15,39 @@ class Controller {
         $arrAnswers = Answer::getAnswers($arrQuestions); // набор ответов
         $_SESSION['sessionId'] = session_id();
         $_SESSION['catId'] = $oneCat[0]['id'];
-        $_SESSION['questionId'] = $arrQuestions['id'];
-        $_SESSION['answerId'] = $arrAnswers[0]['id'];
+        $_SESSION['attempts'] = 5;
+
         for ($i = 0; $i < count($arrAnswers); $i++) {
-            if($arrAnswers[i][id_question] == $arrQuestions['id']){
-                
-                $_SESSION['answerIdQuestion'] = $arrAnswers[0]['id_questions'];
-                $_SESSION['answer'] = $arrAnswers[i]['answer'];
+            if($arrAnswers[$i]['id_questions'] == $arrQuestions['id']){
+                $_SESSION['answerIdQuestion'] = $arrAnswers[$i]['id_questions'];
+                $_SESSION['answer'] = $arrAnswers[$i]['answer'];
             }
-            
         }
-        
-        
-        echo 'oneCat = ';
-        print_r($oneCat);
+
+//        echo 'oneCat = ';
+//        print_r($oneCat);
+//        echo '</br>arrQuestionsID_type_exercise = ';
+//        print_r($arrQuestions['id_type_exercise']);
+//        echo '</br>arrQuestionsTitle = ';
+//        print_r($arrQuestions['title']);
+//        echo '</br>arrAnswersId = ';
+//        print_r($arrAnswers[0]['id']);
         
         echo '</br>arrQuestionsId = ';
         print_r($arrQuestions['id']); //номер выбранного вопроса и хорошо бы сохранить!! как вариант $_SESSION[]
-        
-        echo '</br>arrQuestionsID_type_exercise = ';
-        print_r($arrQuestions['id_type_exercise']);
-        echo '</br>arrQuestionsTitle = ';
-        print_r($arrQuestions['title']);
-        
+
         echo '</br>arrAnswers[0] = ';
         print_r($arrAnswers[0]);
         
-        echo '</br>arrAnswersId = ';
-        print_r($arrAnswers[0]['id']);
-        
         include_once 'view/exercise.php';
-       // Exercise::saveExerciseAnswer($arrQuestions, $arrAnswers);
     }
     
     // Запись ответа на упражнение
     public function exerciseAnswer() {
-        
-
+        $_SESSION['attempts'] = $_SESSION['attempts'] - 1;
+        if ($_SESSION['attempts'] != 0){
+            
+        } 
         
         
     }
