@@ -17,6 +17,15 @@ class Controller {
         $_SESSION['catId'] = $oneCat[0]['id'];
         $_SESSION['questionId'] = $arrQuestions['id'];
         $_SESSION['answerId'] = $arrAnswers[0]['id'];
+        for ($i = 0; $i < count($arrAnswers); $i++) {
+            if($arrAnswers[i][id_question] == $arrQuestions['id']){
+                
+                $_SESSION['answerIdQuestion'] = $arrAnswers[0]['id_questions'];
+                $_SESSION['answer'] = $arrAnswers[i]['answer'];
+            }
+            
+        }
+        
         
         echo 'oneCat = ';
         print_r($oneCat);
@@ -29,7 +38,7 @@ class Controller {
         echo '</br>arrQuestionsTitle = ';
         print_r($arrQuestions['title']);
         
-        echo '</br>arrAnswers = ';
+        echo '</br>arrAnswers[0] = ';
         print_r($arrAnswers[0]);
         
         echo '</br>arrAnswersId = ';
