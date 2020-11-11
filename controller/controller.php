@@ -13,21 +13,21 @@ class Controller {
         $oneCat = Category::getOneCategory($id); // категория
         $arrQuestions = Exercise::getOneExerciseByCategoryID($id); // выборка одного случайного вопроса выбранной категории
         $arrAnswers = Answer::getAnswers($arrQuestions); // набор ответов
-        print_r($arrQuestions['id']);//номер выбранного вопроса и хорошо бы сохранить!! как вариант $_SESSION[]
         $_SESSION['sessionId'] = session_id();
-        $_SESSION['catId'] = $oneCat['id'];
+        $_SESSION['catId'] = $oneCat[0]['id'];
         $_SESSION['questionId'] = $arrQuestions['id'];
-        $_SESSION['answerId'] = $arrAnswers[1][id];
+        $_SESSION['answerId'] = $arrAnswers[0]['id'];
+        
         echo 'oneCat = ';
         print_r($oneCat);
         
-        echo 'arrQuestionsId = ';
-        echo '</br>';
-        print_r($arrQuestions['id']);
+        echo '</br>arrQuestionsId = ';
+        print_r($arrQuestions['id']); //номер выбранного вопроса и хорошо бы сохранить!! как вариант $_SESSION[]
         
-        echo '</br>';
-        echo 'arrQuestions = ';
-        print_r($arrQuestions);
+        echo '</br>arrQuestionsID_type_exercise = ';
+        print_r($arrQuestions['id_type_exercise']);
+        echo '</br>arrQuestionsTitle = ';
+        print_r($arrQuestions['title']);
         
         echo '</br>arrAnswers = ';
         print_r($arrAnswers[0]);
